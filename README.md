@@ -23,10 +23,13 @@
 
 ## 設計イメージ
 
-![image00](https://github.com/wiki/tomonos333/OriginalApp02/images/origin_image00.jpeg)
-![image00-1](https://github.com/tomonos333/OriginalApp02.wiki.git/images/origin_image00.jpeg)
-![image00-2](https://github.com/tomonos333/OriginalApp02/wiki/images/origin_image00.jpeg)
-
+![image00](https://github.com/tomonos333/OriginalApp02/wiki/images/origin_image00.jpeg)
+![image01](https://github.com/tomonos333/OriginalApp02/wiki/images/origin_image01.jpeg)
+![image02](https://github.com/tomonos333/OriginalApp02/wiki/images/origin_image02.jpeg)
+![image03](https://github.com/tomonos333/OriginalApp02/wiki/images/origin_image03.jpeg)
+![image04](https://github.com/tomonos333/OriginalApp02/wiki/images/origin_image04.jpeg)
+![image05](https://github.com/tomonos333/OriginalApp02/wiki/images/origin_image05.jpeg)
+![image06](https://github.com/tomonos333/OriginalApp02/wiki/images/origin_image06.jpeg)
 
 
 ## その他
