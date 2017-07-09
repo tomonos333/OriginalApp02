@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="-15" y="132"/>
         </scene>
-        <!--View Controller-->
+        <!--Time Line View Controller-->
         <scene sceneID="vmT-Zn-eBz">
             <objects>
-                <viewController id="hM7-qg-1tf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TimeLineViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hM7-qg-1tf" customClass="TimeLineViewController" customModule="TechOriginal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YxH-r6-RB0"/>
                         <viewControllerLayoutGuide type="bottom" id="1jB-ty-Z1e"/>
@@ -38,17 +38,29 @@
                     <view key="view" contentMode="scaleToFill" id="izn-iS-Ofr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIMELINE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIW-K7-JK6">
+                                <rect key="frame" x="150" y="323" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JIW-K7-JK6" firstAttribute="centerX" secondItem="izn-iS-Ofr" secondAttribute="centerX" id="jiZ-nI-hUj"/>
+                            <constraint firstItem="JIW-K7-JK6" firstAttribute="centerY" secondItem="izn-iS-Ofr" secondAttribute="centerY" id="oWd-Gh-lGZ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xbk-gv-yql" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4" y="1032"/>
+            <point key="canvasLocation" x="-4" y="1031.3343328335832"/>
         </scene>
-        <!--View Controller-->
+        <!--Gallery View Controller-->
         <scene sceneID="tUp-0Z-uaz">
             <objects>
-                <viewController id="FEa-cQ-3tI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GalleryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FEa-cQ-3tI" customClass="GalleryViewController" customModule="TechOriginal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zUV-uJ-iab"/>
                         <viewControllerLayoutGuide type="bottom" id="DlK-It-css"/>
@@ -56,17 +68,29 @@
                     <view key="view" contentMode="scaleToFill" id="SqB-No-WTM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9km-GV-Ln5">
+                                <rect key="frame" x="160.5" y="323" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9km-GV-Ln5" firstAttribute="centerX" secondItem="SqB-No-WTM" secondAttribute="centerX" id="HGD-i9-iZc"/>
+                            <constraint firstItem="9km-GV-Ln5" firstAttribute="centerY" secondItem="SqB-No-WTM" secondAttribute="centerY" id="doL-Es-Jtl"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hw4-FL-0Me" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="682" y="1032"/>
         </scene>
-        <!--View Controller-->
+        <!--List View Controller-->
         <scene sceneID="34X-6L-CBV">
             <objects>
-                <viewController id="blB-bt-dwt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="blB-bt-dwt" customClass="ListViewController" customModule="TechOriginal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="262-cr-9fj"/>
                         <viewControllerLayoutGuide type="bottom" id="gil-Rf-7c5"/>
@@ -74,7 +98,19 @@
                     <view key="view" contentMode="scaleToFill" id="eTD-qa-GVW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pc6-ou-5kt">
+                                <rect key="frame" x="173.5" y="323" width="28" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pc6-ou-5kt" firstAttribute="centerX" secondItem="eTD-qa-GVW" secondAttribute="centerX" id="2UY-pd-Qdc"/>
+                            <constraint firstItem="pc6-ou-5kt" firstAttribute="centerY" secondItem="eTD-qa-GVW" secondAttribute="centerY" id="qoC-ER-Sd9"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBR-vL-zMe" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -19,6 +19,9 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        // ここより下記はsetupPageMenu()などの外にメソッド化してあげた方が良いでしょう
+        // viewDidLoadのメソッド内部の処理が肥大化していき、HomeViewControllerのここは膨大になっていき後々何しているか管理や保守が難しくなっていく(可読性が落ちるという)
 
         //
         // Array to keep track of controllers in page menu
@@ -35,25 +38,28 @@ class HomeViewController: UIViewController {
         //controllerArray.append(controller)
         
         // 自分で表示したいViewControllerを書く。
+        /*
+         このようにUIViewControllerを継承した、クラスをappend
+         */
+        if let timeLineVC = storyboard?.instantiateViewController(withIdentifier: "TimeLineViewController") {
+            timeLineVC.title = "TimeLine"
+            controllerArray.append(timeLineVC)
+        }
         
-        var timelinecontroller:UIViewController = UIViewController(nibName: "TimelineTableViewCell", bundle: nil)
-        timelinecontroller.title = "TimeLine"
-        controllerArray.append(timelinecontroller)
-
-        var gallerycontroller:UIViewController = UIViewController(nibName: "GalleryCollectionViewCell", bundle: nil)
-        gallerycontroller.title = "Gallery"
-        controllerArray.append(timelinecontroller)
-
+        if let galleryVC = storyboard?.instantiateViewController(withIdentifier: "GalleryViewController") {
+            galleryVC.title = "Gallery"
+            controllerArray.append(galleryVC)
+        }
         
-        var listcontroller:UIViewController = UIViewController(nibName: "ListTableViewCell", bundle: nil)
-        listcontroller.title = "List"
-        controllerArray.append(timelinecontroller)
-        
+        if let listVC = storyboard?.instantiateViewController(withIdentifier: "ListViewController") {
+            listVC.title = "List"
+            controllerArray.append(listVC)
+        }
         
         //Pagemenuのカスタマイズ(option)
         // Customize page menu to your liking (optional) or use default settings by sending nil for 'options' in the init
         // Example:
-        var parameters: [CAPSPageMenuOption] = [
+        let parameters: [CAPSPageMenuOption] = [
             .menuItemSeparatorWidth(4.3),
             .useMenuLikeSegmentedControl(true),
             .menuItemSeparatorPercentageHeight(0.1)
@@ -66,7 +72,6 @@ class HomeViewController: UIViewController {
         // Lastly add page menu as subview of base view controller view
         // or use pageMenu controller in you view hierachy as desired
         self.view.addSubview(pageMenu!.view)
-        
         
     }
 
