@@ -8,5 +8,7 @@ target 'TechOriginal' do
   # Pods for TechOriginal
   pod 'ESTabBarController'
   pod 'PageMenu'
+  pod 'Firebase','3.17.0'
+  pod 'Firebase/Database'
 
 end
