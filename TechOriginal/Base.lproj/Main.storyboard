@@ -318,44 +318,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nee-ya-TQC">
-                                <rect key="frame" x="26" y="290" width="323" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="UbQ-rp-g4K"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nee-ya-TQC">
+                                <rect key="frame" x="26" y="575" width="323" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="キャンセル" backgroundImage="btn"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THo-sb-n7e">
-                                <rect key="frame" x="26" y="170" width="323" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="AjU-fE-849"/>
-                                </constraints>
-                                <state key="normal" title="縦書き" backgroundImage="btn"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMg-0R-c6d">
-                                <rect key="frame" x="26" y="220" width="323" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="cdY-WL-jw2"/>
-                                </constraints>
-                                <state key="normal" title="横書き" backgroundImage="btn"/>
-                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="dZB-ST-U5Y">
+                                <rect key="frame" x="152" y="420" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TXe-CR-MRM">
+                                <rect key="frame" x="16" y="107" width="343" height="350"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4CV-HM-pir">
+                                        <rect key="frame" x="39" y="73" width="126" height="235"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" backgroundImage="template1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e55-mM-smj">
+                                        <rect key="frame" x="173" y="73" width="130" height="230"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" backgroundImage="template2"/>
+                                    </button>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NMg-0R-c6d" firstAttribute="top" secondItem="THo-sb-n7e" secondAttribute="bottom" constant="10" id="MyB-aF-At8"/>
-                            <constraint firstItem="nee-ya-TQC" firstAttribute="centerX" secondItem="AHO-Gy-TX3" secondAttribute="centerX" id="Rdf-oq-CDN"/>
-                            <constraint firstItem="THo-sb-n7e" firstAttribute="centerX" secondItem="AHO-Gy-TX3" secondAttribute="centerX" id="RhC-ji-VCK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="THo-sb-n7e" secondAttribute="trailing" constant="10" id="Sk4-Zz-jp8"/>
-                            <constraint firstItem="nee-ya-TQC" firstAttribute="top" secondItem="NMg-0R-c6d" secondAttribute="bottom" constant="30" id="TMv-Me-Qe3"/>
-                            <constraint firstItem="NMg-0R-c6d" firstAttribute="centerX" secondItem="AHO-Gy-TX3" secondAttribute="centerX" id="Ujh-Df-q4A"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nee-ya-TQC" secondAttribute="trailing" constant="10" id="ciA-Tv-8Ul"/>
-                            <constraint firstItem="NMg-0R-c6d" firstAttribute="leading" secondItem="AHO-Gy-TX3" secondAttribute="leadingMargin" constant="10" id="mTl-zL-Bhe"/>
-                            <constraint firstItem="THo-sb-n7e" firstAttribute="leading" secondItem="AHO-Gy-TX3" secondAttribute="leadingMargin" constant="10" id="oVz-d0-K62"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="NMg-0R-c6d" secondAttribute="trailing" constant="10" id="qNz-j1-Eeq"/>
-                            <constraint firstItem="THo-sb-n7e" firstAttribute="top" secondItem="5jW-0i-6RE" secondAttribute="bottom" constant="150" id="vn8-LC-JiL"/>
-                            <constraint firstItem="nee-ya-TQC" firstAttribute="leading" secondItem="AHO-Gy-TX3" secondAttribute="leadingMargin" constant="10" id="yBC-cf-XR5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TXe-CR-MRM" secondAttribute="trailing" id="mvM-b1-4Ni"/>
+                            <constraint firstItem="TXe-CR-MRM" firstAttribute="leading" secondItem="AHO-Gy-TX3" secondAttribute="leadingMargin" id="xu3-8l-kau"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="TXe-CR-MRM" id="alZ-2t-0p3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXn-TS-dnW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -364,5 +360,7 @@
     </scenes>
     <resources>
         <image name="btn" width="300" height="40"/>
+        <image name="template1" width="318" height="628"/>
+        <image name="template2" width="313" height="625"/>
     </resources>
 </document>
