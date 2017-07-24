@@ -11,4 +11,6 @@ target 'TechOriginal' do
   pod 'Firebase','3.17.0'
   pod 'Firebase/Database'
 
+  # AutoLayout簡単に設定できるライブラリ
+  pod 'Cartography'
 end
