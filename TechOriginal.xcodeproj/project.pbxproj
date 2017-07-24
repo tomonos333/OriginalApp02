@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300AB1D91F25933B001826F6 /* TempButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300AB1D81F25933B001826F6 /* TempButton.swift */; };
 		6D674F151F11937200966CB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D674F141F11937200966CB6 /* AppDelegate.swift */; };
 		6D674F171F11937200966CB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D674F161F11937200966CB6 /* ViewController.swift */; };
 		6D674F1A1F11937200966CB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D674F181F11937200966CB6 /* Main.storyboard */; };
@@ -21,11 +22,11 @@
 		6D674F331F11A79F00966CB6 /* GalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D674F311F11A79F00966CB6 /* GalleryCollectionViewCell.xib */; };
 		6D674F351F11A8A300966CB6 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D674F341F11A8A300966CB6 /* ListTableViewCell.swift */; };
 		6D6C71ED1F1CD5EE00F1EB4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D6C71EC1F1CD5EE00F1EB4C /* GoogleService-Info.plist */; };
-		6D6C71EF1F24623A00F1EB4C /* template3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D6C71EE1F24623A00F1EB4C /* template3.png */; };
 		DACF201B7C745856CAC00298 /* Pods_TechOriginal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F70B8E5B338122507DCF54C /* Pods_TechOriginal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		300AB1D81F25933B001826F6 /* TempButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempButton.swift; sourceTree = "<group>"; };
 		6D674F111F11937200966CB6 /* TechOriginal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechOriginal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D674F141F11937200966CB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D674F161F11937200966CB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		6D674F311F11A79F00966CB6 /* GalleryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GalleryCollectionViewCell.xib; sourceTree = "<group>"; };
 		6D674F341F11A8A300966CB6 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		6D6C71EC1F1CD5EE00F1EB4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		6D6C71EE1F24623A00F1EB4C /* template3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = template3.png; sourceTree = "<group>"; };
 		7F70B8E5B338122507DCF54C /* Pods_TechOriginal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechOriginal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FFE235F1B9D9B4F578160F /* Pods-TechOriginal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechOriginal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechOriginal/Pods-TechOriginal.debug.xcconfig"; sourceTree = "<group>"; };
 		A252478B0167191B7E4DBA52 /* Pods-TechOriginal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechOriginal.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechOriginal/Pods-TechOriginal.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,7 +87,6 @@
 				6D674F2C1F11A70E00966CB6 /* TimelineTableViewCell.swift */,
 				6D674F2D1F11A70E00966CB6 /* TimelineTableViewCell.xib */,
 				6D674F301F11A79E00966CB6 /* GalleryCollectionViewCell.swift */,
-				6D6C71EE1F24623A00F1EB4C /* template3.png */,
 				6D674F311F11A79F00966CB6 /* GalleryCollectionViewCell.xib */,
 				6D674F341F11A8A300966CB6 /* ListTableViewCell.swift */,
 				6D674F261F1195D500966CB6 /* SettingViewController.swift */,
@@ -97,6 +96,7 @@
 				6D674F1D1F11937200966CB6 /* LaunchScreen.storyboard */,
 				6D6C71EC1F1CD5EE00F1EB4C /* GoogleService-Info.plist */,
 				6D674F201F11937200966CB6 /* Info.plist */,
+				300AB1D81F25933B001826F6 /* TempButton.swift */,
 			);
 			path = TechOriginal;
 			sourceTree = "<group>";
@@ -185,7 +185,6 @@
 				6D674F1F1F11937200966CB6 /* LaunchScreen.storyboard in Resources */,
 				6D674F1C1F11937200966CB6 /* Assets.xcassets in Resources */,
 				6D674F331F11A79F00966CB6 /* GalleryCollectionViewCell.xib in Resources */,
-				6D6C71EF1F24623A00F1EB4C /* template3.png in Resources */,
 				6D674F1A1F11937200966CB6 /* Main.storyboard in Resources */,
 				6D6C71ED1F1CD5EE00F1EB4C /* GoogleService-Info.plist in Resources */,
 			);
@@ -215,13 +214,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechOriginal-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		74EA322A5AC7258F24F61972 /* [CP] Embed Pods Frameworks */ = {
@@ -230,9 +232,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TechOriginal/Pods-TechOriginal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController/ESTabBarController.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/PageMenu/PageMenu.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PageMenu.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -252,6 +263,7 @@
 				6D674F171F11937200966CB6 /* ViewController.swift in Sources */,
 				6D674F151F11937200966CB6 /* AppDelegate.swift in Sources */,
 				6D674F2E1F11A70E00966CB6 /* TimelineTableViewCell.swift in Sources */,
+				300AB1D91F25933B001826F6 /* TempButton.swift in Sources */,
 				6D674F321F11A79F00966CB6 /* GalleryCollectionViewCell.swift in Sources */,
 				6D674F271F1195D500966CB6 /* SettingViewController.swift in Sources */,
 			);

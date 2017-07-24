@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -309,7 +309,7 @@
         <!--Word Select View Controller-->
         <scene sceneID="K2E-dv-whb">
             <objects>
-                <viewController storyboardIdentifier="Word" id="HZe-NZ-efD" customClass="WordSelectViewController" customModule="TechOriginal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WordSelect" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HZe-NZ-efD" customClass="WordSelectViewController" customModule="TechOriginal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5jW-0i-6RE"/>
                         <viewControllerLayoutGuide type="bottom" id="FHO-4d-Mwh"/>
@@ -318,39 +318,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nee-ya-TQC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nee-ya-TQC">
                                 <rect key="frame" x="26" y="575" width="323" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="323" id="9Nw-L2-DnO"/>
+                                    <constraint firstAttribute="height" constant="40" id="Hyy-Jk-lMs"/>
+                                </constraints>
                                 <state key="normal" title="キャンセル" backgroundImage="btn"/>
                             </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="dZB-ST-U5Y">
-                                <rect key="frame" x="152" y="420" width="39" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TXe-CR-MRM">
-                                <rect key="frame" x="16" y="107" width="343" height="350"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TXe-CR-MRM">
+                                <rect key="frame" x="0.0" y="107" width="375" height="350"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4CV-HM-pir">
-                                        <rect key="frame" x="39" y="73" width="126" height="235"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" backgroundImage="template1"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e55-mM-smj">
-                                        <rect key="frame" x="173" y="73" width="130" height="230"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" backgroundImage="template2"/>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="WFo-yb-rxR">
+                                        <rect key="frame" x="25" y="16.5" width="156" height="317"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4CV-HM-pir" customClass="TempButton" customModule="TechOriginal" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="156" height="317"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="317" id="PDh-Oh-CU7"/>
+                                                    <constraint firstAttribute="width" constant="156" id="k2z-bH-wiX"/>
+                                                </constraints>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="2RF-L4-6kk"/>
+                                    <constraint firstAttribute="bottom" secondItem="WFo-yb-rxR" secondAttribute="bottom" constant="16" id="3cR-9l-Woe"/>
+                                    <constraint firstItem="WFo-yb-rxR" firstAttribute="leading" secondItem="TXe-CR-MRM" secondAttribute="leading" constant="25" id="8DF-zM-vUI"/>
+                                    <constraint firstItem="WFo-yb-rxR" firstAttribute="top" secondItem="TXe-CR-MRM" secondAttribute="top" constant="16" id="ZKh-Ye-PgD"/>
+                                    <constraint firstAttribute="trailing" secondItem="WFo-yb-rxR" secondAttribute="trailing" constant="25" id="fea-L0-OcV"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="HZe-NZ-efD" id="0mV-OL-jfa"/>
+                                </connections>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="dZB-ST-U5Y">
+                                <rect key="frame" x="87.5" y="432" width="200" height="25"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="RcE-kv-dVa"/>
+                                    <constraint firstAttribute="width" constant="200" id="p0f-th-uSK"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="pageValueChanged:" destination="HZe-NZ-efD" eventType="valueChanged" id="Nww-e2-33L"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="TXe-CR-MRM" secondAttribute="trailing" id="mvM-b1-4Ni"/>
-                            <constraint firstItem="TXe-CR-MRM" firstAttribute="leading" secondItem="AHO-Gy-TX3" secondAttribute="leadingMargin" id="xu3-8l-kau"/>
+                            <constraint firstItem="dZB-ST-U5Y" firstAttribute="top" secondItem="TXe-CR-MRM" secondAttribute="bottom" constant="-25" id="84A-Bd-kte"/>
+                            <constraint firstItem="TXe-CR-MRM" firstAttribute="leading" secondItem="AHO-Gy-TX3" secondAttribute="leading" id="NYF-Is-z6F"/>
+                            <constraint firstAttribute="trailing" secondItem="TXe-CR-MRM" secondAttribute="trailing" id="R3z-dV-MbF"/>
+                            <constraint firstItem="TXe-CR-MRM" firstAttribute="top" secondItem="5jW-0i-6RE" secondAttribute="bottom" constant="87" id="T1T-Dm-1QT"/>
+                            <constraint firstItem="nee-ya-TQC" firstAttribute="top" secondItem="TXe-CR-MRM" secondAttribute="bottom" constant="118" id="XfJ-VZ-awE"/>
+                            <constraint firstItem="nee-ya-TQC" firstAttribute="centerX" secondItem="AHO-Gy-TX3" secondAttribute="centerX" id="jx7-he-8my"/>
+                            <constraint firstItem="dZB-ST-U5Y" firstAttribute="centerX" secondItem="AHO-Gy-TX3" secondAttribute="centerX" id="vEw-j1-DSu"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="pageControl" destination="dZB-ST-U5Y" id="meM-ND-L8m"/>
                         <outlet property="scrollView" destination="TXe-CR-MRM" id="alZ-2t-0p3"/>
+                        <outlet property="tempButton" destination="4CV-HM-pir" id="3y6-0d-DQD"/>
+                        <outlet property="tempButtonStackView" destination="WFo-yb-rxR" id="Cmz-aA-w1W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXn-TS-dnW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -360,7 +390,5 @@
     </scenes>
     <resources>
         <image name="btn" width="300" height="40"/>
-        <image name="template1" width="318" height="628"/>
-        <image name="template2" width="313" height="625"/>
     </resources>
 </document>
